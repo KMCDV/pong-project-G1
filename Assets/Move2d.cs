@@ -19,14 +19,6 @@ public class Move2d : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        /*
-         * 
-         * 
-         * if(CHECK_KEY && CHECK_POSITION_Y)
-         * 
-         * 
-         */
         if (Input.GetKey(upKey) && transform.position.y < 5)
         {
             rigidbody2D.velocity = Vector2.up * speed;
@@ -39,7 +31,5 @@ public class Move2d : MonoBehaviour
         {
             rigidbody2D.velocity = Vector2.zero;
         }
-
-         
     }
 }
